@@ -1,0 +1,435 @@
+.login-page, .signup-page{
+    overflow: hidden;
+    .nav{
+        .blog-link,
+        .apps-link,
+        .pricing-link,
+        .business-link{
+            .inner-nav-link{
+                color:#222;
+            }
+        }
+        .nav-auth .nav-login a{
+            color:#222 !important;
+        }
+    }
+    .mobile-toolbar button{
+        color:#222;
+    }
+}
+
+@media(max-width:991px){
+    .login-page, .signup-page{
+        .mobile-toolbar button{
+            color:#fff;
+        }
+    }
+}
+.login-page .shared-auth-component .left-side{
+    //background-image: url('../../../../assets/Auth/login-bg.png');
+}
+.signup-page .shared-auth-component .left-side{
+    //background-image: url('../../../../assets/Auth/signup-bg.png');
+}
+.shared-auth-component{
+    display: flex;
+}
+.shared-auth-component .left-side{
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:12% 6% 5%;
+}
+.shared-auth-component .form-container{
+    flex:1;
+}
+
+.signup-page .signup-items1{
+    margin-bottom: 65px;
+    .item1{
+        color:#fff;
+        position: relative;
+        background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3));
+        width: 70%;
+        border-radius: 10px;
+        padding:30px 65px;
+        &:last-child{
+            margin: 80px 0 0 auto;
+        }
+        &:first-child .profile{
+            left: -40px;
+        }
+        &:last-child .profile{
+            right: -40px;
+        }
+        &:hover{
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+        }
+    }
+    .profile{
+        width: 85px;
+        position: absolute;
+        top:-40px;
+    }
+    .stars{
+        display: flex;
+        font-size: 16px;
+    }
+    p{
+        font-size: 18px;
+        margin:15px 0;
+    }
+    h6{
+       font-size: 18px;
+    }
+    
+}
+
+.signup-page .signup-items2{
+    color:#fff;
+    h1{
+        font-size: 27.5px;
+        margin-bottom: 17.5px;
+    }
+    .items2{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item2{
+        width: 29%;
+        display: flex;
+        align-items: center;
+        margin:25px 0;
+    }
+    .icon{
+        border:1px solid #fff;
+        background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        font-size: 40px;
+        margin-right: 15px;
+    }
+    p{
+        flex: 1;
+        font-size: 17px;
+    }
+}
+
+@media(max-width:1700px){
+    .signup-page .signup-items2{
+        .item2{
+            width: 47%;
+        }
+    }
+}
+
+@media(max-width:1401px){   
+    .shared-auth-component .left-side{
+        padding:12% 6% 5%;
+    }
+    
+    .signup-page .signup-items1{
+        margin-bottom: 55px;
+        .item1{
+            width: 75%;
+            padding:20px 40px;
+            &:last-child{
+                margin: 40px 0 0 auto;
+            }
+            &:first-child .profile{
+                left: -30px;
+            }
+            &:last-child .profile{
+                right: -30px;
+            }
+        }
+        .profile{
+            width: 70px;
+            top:-30px;
+        }
+        .stars{
+            font-size: 14px;
+        }
+        p{
+            font-size: 15px;
+            margin:15px 0;
+        }
+        h6{
+           font-size: 15px;
+        }
+        
+    }
+    
+    .signup-page .signup-items2{
+        h1{
+            font-size: 20px;
+            margin-bottom: 12.5px;
+        }
+        .item2{
+            width: 47.5%;
+            margin:12.5px 0;
+        }
+        .icon{
+            border:1px solid #fff;
+            width: 55px;
+            height: 55px;
+            font-size: 30px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width:991px){
+    .shared-auth-component{
+        display: block;
+    }
+    .shared-auth-component .left-side{
+        width: 100%;
+        padding:140px 7.5% 35px;
+    }
+    .shared-auth-component .form-container{
+        flex:unset;
+        width: 100%;
+    }
+    .signup-page .signup-items1{
+        margin-bottom: 45px;
+        padding:0 30px;
+        .item1{
+            width: 90%;
+            padding:15px 35px;
+            &:last-child{
+                margin: 40px 0 0 auto;
+            }
+            &:first-child .profile{
+                left: -25px;
+            }
+            &:last-child .profile{
+                right: -25px;
+            }
+        }
+        .profile{
+            width: 55px;
+            top:-25px;
+        }
+        .stars{
+            font-size: 13px;
+        }
+    }
+    
+    .signup-page .signup-items2{
+        h1{
+            font-size: 17.5px;
+            margin-bottom: 10px;
+        }
+       
+        .item2{
+            width: 47.5%;
+            margin:10px 0;
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin-right: 15px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+@media(max-width:475px){
+    .signup-page .signup-items2{
+        .item2{
+            width: 100%;
+            margin:7.5px 0;
+        }
+    }
+}
+
+//======================================
+.login-page .inner-left-side{
+    color:white;
+    text-align: center;
+    h1{
+        font-size: 30px;
+    }
+    .p{
+        font-size: 18px;
+        width: 70%;
+        margin:20px auto 50px;
+    }
+    .items1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item1{
+        position: relative;
+        background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25));
+        width: 30%;
+        border-radius: 10px;
+        padding:75px 25px 25px;
+        margin:45px 0;
+    }
+    .item1 p{
+        font-size: 18px;
+    }
+    .icon{
+        position: absolute;
+        top:-40px;
+        left:0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:1px solid #fff;
+        background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25));
+        font-size: 40px;
+    }
+}
+
+@media(max-width:1401px){
+    .login-page .inner-left-side{
+        h1{
+            font-size: 25px;
+        }
+        .p{
+            font-size: 15px;
+            margin:20px auto 45px;
+        }
+        .item1{
+            padding:60px 20px 20px;
+            margin:35px 0;
+        }
+        .item1 p{
+            font-size: 15px;
+        }
+        .icon{
+            top:-32.0px;
+            width: 65px;
+            height: 65px;
+            font-size: 32.5px;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .login-page .inner-left-side{
+        .p{
+            width: 100%;
+        }
+        .item1{
+            width: 47.5%;
+            margin:30px 0;
+        }
+    }
+}
+
+//-------------------------------
+@-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+}
+@keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+}
+
+.signup-page .signup-items1{
+    .item1:hover .profile{
+        -webkit-animation-name: hvr-pop;
+        animation-name: hvr-pop;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 2;
+        animation-iteration-count: 2;
+    }
+}
+
+.signup-page .signup-items2{
+    .item2{
+        transition: 0.3s ease-in-out;
+    }
+    .item2:hover{
+        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        .icon{
+            border:1px solid #427CFF;
+            color:#427CFF;
+            transition: 0.15s  ease-in-out;
+        }
+    }
+}
+
+//========================================
+@-webkit-keyframes hvr-icon-pulse-shrink {
+    to {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+}
+@keyframes hvr-icon-pulse-shrink {
+    to {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+}
+
+.login-page .inner-left-side{
+    .item1{
+        transition: 0.35s ease-in-out;
+    }
+    .item1:hover{
+        transform: scale(1.035);
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+        .icon{
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+        }
+    }
+    .item1 .icon svg{
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    .item1:hover .icon svg{
+        -webkit-animation-name: hvr-icon-pulse-shrink;
+        animation-name: hvr-icon-pulse-shrink;
+        -webkit-animation-duration: 0.4s;
+        animation-duration: 0.4s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+    }
+}
+
+@media(max-width:767px){
+    .signup-page .signup-items2{
+        .item2:hover{
+            transform: translateY(0px);
+            -webkit-transform: translateY(0px);
+        }
+    }
+}
